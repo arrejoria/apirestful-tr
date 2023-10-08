@@ -13,7 +13,7 @@ class responses {
             "error_id" => "405",
             "error_msg" => "Metodo no permitido"
         );
-        return $response;
+        return $this->$response;
     }
 
     public function error_200($string = "Datos Incorrectos"){
@@ -22,7 +22,7 @@ class responses {
             "error_id" => "200",
             "error_msg" => $string
         );
-        return $response;
+        return $this->$response;
     }
 
     public function error_400(){
@@ -31,7 +31,7 @@ class responses {
             "error_id" => "400",
             "error_msg" => "Datos enviados incompletos o con formato incorrecto"
         );
-        return $response;
+        return $this->$response;
     }
 
 }

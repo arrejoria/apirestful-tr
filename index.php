@@ -15,4 +15,4 @@ $conection = new conection;
 // print_r($conection->nonQueryId($query));
 // echo "</pre>";
 
-Hola index
+echo 'Hola index';
